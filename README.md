@@ -11,7 +11,7 @@ Batch evaluator for SAU Graduate Course Substitution Request PDFs.
 
 ## Usage
 ```bash
-python extract_course_substitution.py /path/to/pdf/folder
+python ext_course_full_.py /path/to/pdf/folder
 ```
 
 ## Requirements
