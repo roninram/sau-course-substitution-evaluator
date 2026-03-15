@@ -1,0 +1,8 @@
+# SAU Graduate Course Substitution — Batch Evaluator
+# Developer : Dr. Rami
+# GitHub    : github.com/roninram
+#
+# Install dependencies with:
+#   pip install -r requirements.txt
+
+pdfplumber==0.11.9   # PDF text extraction
