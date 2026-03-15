@@ -27,6 +27,20 @@ from pathlib import Path
 import pdfplumber
 
 
+# ── developer banner ─────────────────────────────────────────────────────────
+
+BANNER = """
+╔══════════════════════════════════════════════════════════════╗
+║     SAU Graduate Course Substitution — Batch Evaluator       ║
+║                                                              ║
+║  Developer : Dr. Rami                                        ║
+║  Title     : Associate Prof. of Computer Science             ║
+║  GitHub    : github.com/roninram                             ║
+║  Version   : 1.0                                             ║
+╚══════════════════════════════════════════════════════════════╝
+"""
+
+
 # ── text helpers ──────────────────────────────────────────────────────────────
 
 def extract_text(pdf_path: Path) -> str:
@@ -217,6 +231,7 @@ def write_eval_csv(csv_path: Path, entries: list) -> None:
 # ── main ──────────────────────────────────────────────────────────────────────
 
 def main() -> None:
+    print(BANNER)
     folder = Path(sys.argv[1]) if len(sys.argv) > 1 else Path(".")
 
     if not folder.is_dir():
